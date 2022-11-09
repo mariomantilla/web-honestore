@@ -2,6 +2,10 @@ body {
   overflow-x: hidden;
 }
 
+.play-link img {
+  max-width: 80vw;
+}
+
 .shadow {
   -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.08);
   box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.08);
