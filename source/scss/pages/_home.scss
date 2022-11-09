@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 // Banner Styles
 .banner {
 	padding: 100px 0;
@@ -379,8 +383,12 @@
     width: 200%;
     height: 200%;
     border-radius: 50%;
-    background-image: linear-gradient(45deg,#009EC5 0%, $primary-color 20%,#02225B 50%);
+    background-image: linear-gradient(45deg,#ffffff 0%, $primary-color-light 20%, $primary-color 50%);
 	}
+}
+
+.text-primary {
+	color: $primary-color !important;
 }
 
 .pull-top{
