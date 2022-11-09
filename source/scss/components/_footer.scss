@@ -71,45 +71,6 @@
 	}
 }
 
-.footer-classic {
-	background: #fafafa;
-	text-align: center;
-	padding: 110px 0;
-
-	ul.social-icons {
-		margin-bottom: 30px;
-
-		li {
-			@include mobile {
-				margin-bottom: 10px;
-			}
-
-			a {
-				padding: 0 20px;
-				display: block;
-
-				i {
-					font-size: 36px !important;
-					color: $dark;
-				}
-			}
-		}
-	}
-
-	ul.footer-links {
-		li {
-			a {
-				padding: 0 10px;
-				display: block;
-				font-weight: bold;
-				text-transform: uppercase;
-				font-size: 14px;
-				color: $dark;
-			}
-		}
-	}
-}
-
 // scroll-top-to button
 .scroll-top-to{
 	position: fixed;
