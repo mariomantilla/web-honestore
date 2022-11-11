@@ -17,13 +17,13 @@ Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
   to = "/s?:splat"
 
 [[redirects]]
-  from = "/external/play"
-  to = "/s?:splat"
-
-[[redirects]]
-  from = "/external/add_shop"
-  to = "/s?:splat"
-
-[[redirects]]
-  from = "/external/feedback"
+  from = "/play"
   to = "https://play.google.com/store/apps/details?id=app.honestore.android"
+
+[[redirects]]
+  from = "/add_shop"
+  to = "https://forms.gle/wkvFw7yFZpoVch2U9"
+
+[[redirects]]
+  from = "/feedback"
+  to = "https://forms.gle/4N5fkZgUXtKVhwRV8"
