@@ -15,3 +15,15 @@ Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 [[redirects]]
   from = "/s/*"
   to = "/s?:splat"
+
+[[redirects]]
+  from = "/external/play"
+  to = "/s?:splat"
+
+[[redirects]]
+  from = "/external/add_shop"
+  to = "/s?:splat"
+
+[[redirects]]
+  from = "/external/feedback"
+  to = "https://play.google.com/store/apps/details?id=app.honestore.android"
