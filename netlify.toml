@@ -27,7 +27,3 @@ Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 [[redirects]]
   from = "/feedback"
   to = "https://forms.gle/4N5fkZgUXtKVhwRV8"
-
-[[redirects]]
-  from = "/deeplink"
-  to = "app.honestore.android://deeplink/shop/2"
