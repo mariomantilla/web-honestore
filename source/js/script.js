@@ -27,4 +27,18 @@
     return false;
   });
 
+
+  $(document).ready(function() {
+
+    // -----------------------------
+    //  Video Replace
+    // -----------------------------
+    $('.video-box i').click(function () {
+      var video = '<iframe class="border-0" allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
+      $(this).replaceWith(video);
+    });
+  
+  });
+
+
 })(jQuery);
