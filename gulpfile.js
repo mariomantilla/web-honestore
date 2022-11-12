@@ -13,6 +13,7 @@ var path = {
   src: {
     html: "source/*.html",
     others: "source/*.+(php|ico|png)",
+    assetlinks: "source/.well-known/assetlinks.json",
     htminc: "source/partials/**/*.htm",
     incdir: "source/partials/",
     plugins: "source/plugins/**/*.*",
@@ -120,6 +121,11 @@ gulp.task("others:build", function () {
   return gulp.src(path.src.others).pipe(gulp.dest(path.build.dirDev));
 });
 
+// Other files like favicon, php, sourcele-icon on root directory
+gulp.task("assetlinks:build", function () {
+  return gulp.src(path.src.assetlinks).pipe(gulp.dest(path.build.dirDev+'/.well-known/'));
+});
+
 // Clean Build Folder
 gulp.task("clean", function (cb) {
   rimraf("./theme", cb);
@@ -146,6 +152,7 @@ gulp.task(
     "images:build",
     "plugins:build",
     "others:build",
+    "assetlinks:build",
     gulp.parallel("watch:build", function () {
       bs.init({
         server: {
